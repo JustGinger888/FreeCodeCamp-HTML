@@ -25,15 +25,12 @@
   font-family:"Helvetica";
   font-size: 50px;
   text-align: center;
-  line-height:10px;
-
 }
 #subtitle {
   color:#01A7C2;
   font-family:"Helvetica";
   text-align: center;
   font-size: 25px;
-  line-height:10px;
 }
 #tribute-info {
   margin-left: 40px;
@@ -51,7 +48,6 @@ footer {
   font-size: 25px;
 }
 #tribute-link {
-  
   font-family:"Helvetica";
   font-size: 25px;
 }
