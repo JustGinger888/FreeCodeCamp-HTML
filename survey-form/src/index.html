@@ -4,46 +4,48 @@
         <p id="description">This is a completely random survey I have created in order to obtain a Responsive Web Design certification from free code camp</p>
     </head>
     <body>
-        <form id="survey-form">
-            <h2>Required Information</h2>
-            
-            <p id="name-label">Full Name:<br>
-            <input id="name" type="text" placeholder="Enter your Full Name" required></p>
+        <div id="form-parent">
+            <form id="survey-form">
+                <h2>Required Information</h2>
+                
+                <p id="name-label">Full Name:<br>
+                <input id="name" type="text" placeholder="Enter your Full Name" required></p>
 
-            <p id="email-label">Email:<br>
-            <input id="email" type="email" placeholder="Enter your valid Email" required><br></p>
+                <p id="email-label">Email:<br>
+                <input id="email" type="email" placeholder="Enter your valid Email" required><br></p>
 
-            <h2>Optional Information</h2>
+                <h2>Optional Information</h2>
 
-            <p id="number-label">Age:<br>
-            <input type="number" size="6" name="age" min="18" max="99" value="18"><br></p>
+                <p id="number-label">Age:<br>
+                <input type="number" size="6" name="age" min="18" max="99" value="18"><br></p>
 
-            <p id="radio-label">Male or Female:<br>
-                <input type="radio" name="maleOrFemale" value="male">Male<br>
-                <input type="radio" name="maleOrFemale" value="female">Female<br>
-                <input type="radio" name="maleOrFemale" value="other">Other
-            </p>
+                <p id="radio-label">Male or Female:<br>
+                    <input type="radio" name="maleOrFemale" value="male">Male<br>
+                    <input type="radio" name="maleOrFemale" value="female">Female<br>
+                    <input type="radio" name="maleOrFemale" value="other">Other
+                </p>
 
-            <p id="dropdown-label">Favorite Car:<br>
-                <select id="dropdown">
-                    <option value="volvo">Volvo</option>
-                    <option value="jeel">Jeep</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
-            </p>
-            
-            <p id="checkbox-label"> Best Type Of Chocolate:<br>
-                <input type="checkbox" name="chocolate" value="white">White Chocolate<br>
-                <input type="checkbox" name="chocolate" value="milk">Milk Chocolate<br>
-                <input type="checkbox" name="chocolate" value="dark">Dark Chocolate
-            </p>
-            
-            <p id="textbox-label">Additional Coments:<br>
-                <input id="textbox" type="text" placeholder="Enter comments here...">
-            </p>
+                <p id="dropdown-label">Favorite Car:<br>
+                    <select id="dropdown">
+                        <option value="volvo">Volvo</option>
+                        <option value="jeel">Jeep</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </p>
+                
+                <p id="checkbox-label"> Best Type Of Chocolate:<br>
+                    <input type="checkbox" name="chocolate" value="white">White Chocolate<br>
+                    <input type="checkbox" name="chocolate" value="milk">Milk Chocolate<br>
+                    <input type="checkbox" name="chocolate" value="dark">Dark Chocolate
+                </p>
+                
+                <p id="textbox-label">Additional Coments:<br>
+                    <input id="textbox" type="text" placeholder="Enter comments here...">
+                </p>
 
-            <input type="submit" value="Submit">
-        </form>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </body>
 </html>
