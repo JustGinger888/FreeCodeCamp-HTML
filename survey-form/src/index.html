@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-    <head>
-        <h1 id="title">Completely Random Survey Form</h1>
-        <p id="description">This is a completely random survey I have created in order to obtain a Responsive Web Design certification from free code camp</p>
-    </head>
+    <style>
+        body {
+        background-image: url('https://www.rafaeldejongh.com/wp-content/uploads/2017/08/Synthwave-Neon-80s-Background-Marmoset-Revamp.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        #title {
+        color: #4CAF50;
+        font-family: "Helvetica", Times, serif;
+        text-align: center;
+        font-size:40px;
+        }
+        #description {
+        text-align: center;
+        margin: 0 80px 0 80px;
+        }
+        h2{
+        color: #45a049;
+        font-family: "Helvetica", Times, serif;
+        }
+        p {
+        color: #000000;
+        font-family: "Helvetica", Times, serif;
+        }
+        #form-parent {
+        display: table;
+        width: 60%;
+        margin: auto;
+        opacity: 95%;
+        }
+        #survey-form {
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        }
+        #name, #email, #age, #textbox, #comments, #dropdown {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+        div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        }
+        textarea {
+        font-family: "Helvetica", Times, serif;
+        font-size: 14px;
+        height: 80px
+        }
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;
+        }
+    </style>
+    
     <body>
+      
         <div id="form-parent">
             <form id="survey-form">
+              <h1 id="title">Completely Random Survey Form</h1>
+        <p id="description">This is a completely random survey I have created in order to obtain a Responsive Web Design certification from free code camp</p>
+              <hr/>
                 <h2>Required Information</h2>
                 
                 <p id="name-label">Full Name:<br>
@@ -13,7 +91,7 @@
 
                 <p id="email-label">Email:<br>
                 <input id="email" type="email" placeholder="Enter your valid Email" required><br></p>
-
+        <hr/>
                 <h2>Optional Information</h2>
 
                 <p id="number-label">Age:<br>
@@ -26,8 +104,10 @@
                 </p>
 
                 <p id="dropdown-label">Favorite Car:<br>
+                  
                     <select id="dropdown">
-                      <option value="volvo">- none -</option>  
+
+                      <option value="none">-none-</option>  
                       <option value="volvo">Volvo</option>
                         <option value="jeel">Jeep</option>
                         <option value="fiat">Fiat</option>
@@ -40,7 +120,7 @@
                     <input type="checkbox" name="chocolate" value="milk">Milk Chocolate<br>
                     <input type="checkbox" name="chocolate" value="dark">Dark Chocolate
                 </p>
-                
+                <p>Additional Comments:
                 <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
                
               </p>
