@@ -17,7 +17,7 @@
                 <h2>Optional Information</h2>
 
                 <p id="number-label">Age:<br>
-                <input type="number" size="6" name="age" min="18" max="99" value="18"><br></p>
+                <input type="number" size="6" id="age" min="18" max="99" value="18"><br></p>
 
                 <p id="radio-label">Male or Female:<br>
                     <input type="radio" name="maleOrFemale" value="male">Male<br>
@@ -27,7 +27,8 @@
 
                 <p id="dropdown-label">Favorite Car:<br>
                     <select id="dropdown">
-                        <option value="volvo">Volvo</option>
+                      <option value="volvo">- none -</option>  
+                      <option value="volvo">Volvo</option>
                         <option value="jeel">Jeep</option>
                         <option value="fiat">Fiat</option>
                         <option value="audi">Audi</option>
@@ -40,9 +41,9 @@
                     <input type="checkbox" name="chocolate" value="dark">Dark Chocolate
                 </p>
                 
-                <p id="textbox-label">Additional Coments:<br>
-                    <input id="textbox" type="text" placeholder="Enter comments here...">
-                </p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+               
+              </p>
 
                 <input type="submit" value="Submit">
             </form>
