@@ -1,45 +1,58 @@
 <style>
     header {
-        background-color: red;
+        background-color:#6441a5;
         position: fixed;
         left: 0;
-        bottom: 0;
+        top: 0;
         width: 100%;
-        background-color: red;
         color: white;
         text-align: center;
     }
 
     /* The navigation bar */
     .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+        
+        display: flex;
+        margin: 0 0 0 auto;
+
     }
     
     /* Links inside the navbar */
     .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: right;
+        font-size: large;
+        padding: 14px 16px;
+        text-decoration: none;
     }
 
     /* Change background on mouse-over */
     .navbar a:hover {
-    background: #ddd;
-    color: black;
+        background: #ddd;
+        color: black;
+    }
+
+    .navbar img{
+        align-items: flex-start
     }
 
     /* Main content */
     .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
+        margin-top: 68px; /* Add a top margin to avoid content overlay */
     }
 
+    .top-nav{
+        display: flex;
+    }
+
+    .site-title{
+        display: flex;
+        margin: auto 0 0 0;
+        width: auto;
+        height: 60px;
+    }
 
     footer{
         background-color: red;
@@ -58,35 +71,37 @@
 <!DOCTYPE html>
 <html>
     <header id="header">
+        <div class="top-nav">
+            <img id="header-img" class="site-title" src="https://i.imgur.com/LHtYi96.png" alt="Memified Logo">
             <nav class="navbar">
                 <a class="nav-link" href="">Home</a>
                 <a class="nav-link" href="">Features</a>
                 <a class="nav-link" href="">About</a>
                 <a class="nav-link" href="">Pricing</a>
             </nav>
-            <img id="header-img" src="" alt="Logo">
+        </div>
+            
         <title>
             <h1>header</h1>
         </title>
     </header>
     <body>
-        <br>
-        <br>
-        <br>
-        <iframe width="420" height="315" id="video"></iframe>
-        <form action="https://www.freecodecamp.com/email-submit" target="_blank">
-            <fieldset>
-                <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
-                <input id="submit" type="submit" value="Submit">
-            </fieldset>
-        </form>
-        <p>
-            
-        </p>
+        <div class="main">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/-KE8v44VS_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <form action="https://www.freecodecamp.com/email-submit" target="_blank">
+                <fieldset>
+                    <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
+                    <input id="submit" type="submit" value="Submit">
+                </fieldset>
+            </form>
+            <p>
+                
+            </p>
+        </div>
     </body>
     <footer>
         <div class="footer-box">
-            <>
+            <p>ss</p>
         </div>
     </footer>
 </html>
