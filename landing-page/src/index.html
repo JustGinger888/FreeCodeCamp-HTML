@@ -17,7 +17,7 @@
 
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-    .example {background: orange;}
+        iframe {width: 100%;}
     } 
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -25,6 +25,11 @@
     .example {background: pink;}
     }
     
+    iframe {
+        width: 100%; 
+        height: auto;
+    }
+
     header {
         background-color:#6441a5;
         position: fixed;
@@ -113,7 +118,7 @@
     </header>
     <body>
         <div class="main">
-            <iframe width="916" height="515" src="https://www.youtube.com/embed/-KE8v44VS_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/-KE8v44VS_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <form action="https://www.freecodecamp.com/email-submit" target="_blank">
                 <fieldset>
                     <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
