@@ -32,13 +32,13 @@
     }
 
     /*Iframe Auto Scale*/    
-    .iframe-container {
+    #iframe-container {
         overflow: hidden;
         padding-top: 56.25%;
         position: relative;
     }
  
-    .iframe-container iframe {
+    #iframe-container iframe {
         border: 0;
         height: 100%;
         left: 0;
@@ -104,6 +104,50 @@
         height: 60px;
     }
 
+    #intro-container{
+        font-size: medium;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    form{
+        border-radius: 5px;
+        background-color: #151518d5;
+        padding: 20px;
+    }
+
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #6441a5;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #55378f;
+    }
+
+    .filler {
+        font-size: small;
+        text-align: center;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (max-width: 600px) {
@@ -138,7 +182,12 @@
     .content {
         margin-top: 48px; /* Add a top margin to avoid content overlay */
     }
-    
+    #intro-container{
+        font-size: small;
+    }
+    .filler {
+        font-size: x-small;
+    }
     }
     
 </style>
@@ -160,40 +209,30 @@
                 <a class="nav-link" href="">About</a>
                 <a class="nav-link" href="">Pricing</a>
             </nav>
-        </div>
-            
+        </div>    
         <title>
             <h1>header</h1>
         </title>
     </header>
     <body>
         <div class="content">
-            <div class="iframe-container">
+            <div id="intro-container">
+                <p>This is a page I created as part of my FreeCodeCamp Responsive Web Design certification, using the Memified logo I created as a center point for the landing points desig. This introduction itself is also just filler content which allow me to give brief explanation on what I was busy creating.</p>
+            </div>
+            <div id="iframe-container">
                 <iframe src="https://www.youtube.com/embed/-KE8v44VS_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div id="subscribe">   
+            <div id="fiiler-content-1" class="filler">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra vel turpis. Consectetur adipiscing elit pellentesque habitant. Ultricies tristique nulla aliquet enim tortor at auctor urna. Auctor neque vitae tempus quam pellentesque nec. In cursus turpis massa tincidunt dui ut. Vel pretium lectus quam id. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Egestas integer eget aliquet nibh praesent. Sapien eget mi proin sed libero enim. Nulla facilisi nullam vehicula ipsum. Dictumst quisque sagittis purus sit amet volutpat consequat. Sit amet consectetur adipiscing elit. Velit egestas dui id ornare arcu odio ut sem.</p>
+                <p>Tristique risus nec feugiat in. Vitae tortor condimentum lacinia quis vel eros donec ac. Aliquam ut porttitor leo a diam sollicitudin tempor id. Velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Consequat ac felis donec et odio pellentesque. Enim diam vulputate ut pharetra sit amet. Pellentesque elit eget gravida cum sociis natoque penatibus et. Ultricies tristique nulla aliquet enim tortor at auctor. Faucibus ornare suspendisse sed nisi lacus sed. Non enim praesent elementum facilisis leo vel fringilla est. Magna etiam tempor orci eu lobortis elementum. Et leo duis ut diam quam nulla porttitor. Quis vel eros donec ac. Vulputate enim nulla aliquet porttitor lacus luctus. Amet dictum sit amet justo donec enim. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Magna eget est lorem ipsum. Integer quis auctor elit sed vulputate mi sit amet mauris.</p>
+            </div>
+            <div id="subscribe-contaner">   
                 <form action="https://www.freecodecamp.com/email-submit" target="_blank">
-                    <fieldset>
+  
                         <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
                         <input id="submit" type="submit" value="Submit">
-                    </fieldset>
+             
                 </form>
-            </div>
-            <div>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                <p>hello</p>
-                
             </div>
         </div>
     </body>
