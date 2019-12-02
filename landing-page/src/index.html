@@ -62,7 +62,7 @@
 
     /* Main content */
     .main {
-        margin-top: 80px; /* Add a top margin to avoid content overlay */
+        margin-top: 68px; /* Add a top margin to avoid content overlay */
     }
 
     .top-nav{
@@ -76,15 +76,20 @@
         height: 60px;
     }
 
-    footer{
-        background-color: red;
-        position: fixed;
-        left: 0;
+    #page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+    }
+
+    #footer {
+        position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: red;
-        color: white;
-        text-align: center;
+        height: 2.5rem;            /* Footer height */
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -118,7 +123,7 @@
         height: 40px;
     }
     .main {
-        margin-top: 60px; /* Add a top margin to avoid content overlay */
+        margin-top: 48px; /* Add a top margin to avoid content overlay */
     }
     
     }
@@ -149,27 +154,30 @@
         </title>
     </header>
     <body>
-        <div class="main">
-            <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/-KE8v44VS_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="page-container">
+            <div id="content-wrap">
+                <div class="main">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/-KE8v44VS_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="subscribe">   
+                        <form action="https://www.freecodecamp.com/email-submit" target="_blank">
+                            <fieldset>
+                                <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
+                                <input id="submit" type="submit" value="Submit">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </div>
             </div>
-            <br>    
-            <form action="https://www.freecodecamp.com/email-submit" target="_blank">
-                <fieldset>
-                    <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
-                    <input id="submit" type="submit" value="Submit">
-                </fieldset>
-            </form>
-            <p>
-                
-            </p>
-        </div>
-    </body>
-    <footer>
-        <div class="footer-box">
+        <footer id="footer">
             <p>ss</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    </body>
 </html>
 
 <!---
