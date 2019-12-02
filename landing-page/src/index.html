@@ -1,7 +1,26 @@
 <style>
 
-    body{
+    html{
+        font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
         background: #0e0e10;
+    }
+
+    .content {
+        flex: 1 0 auto;
+    }
+
+    .footer {
+        width: 100%;
+        flex-shrink: 0;
+        background: #6441a5;
     }
 
     /*Iframe Auto Scale*/    
@@ -61,7 +80,7 @@
     }
 
     /* Main content */
-    .main {
+    .content {
         margin-top: 68px; /* Add a top margin to avoid content overlay */
     }
 
@@ -76,18 +95,11 @@
         height: 60px;
     }
 
-    #page-container {
-        position: relative;
-        min-height: 100vh;
-    }
-
-    #content-wrap {
-        padding-bottom: 2.5rem;    /* Footer height */
-    }
-
     #footer {
-        position: absolute;
+        background: #6441a5;
+        position: relative;
         bottom: 0;
+        left: 0;
         width: 100%;
         height: 2.5rem;            /* Footer height */
     }
@@ -122,7 +134,7 @@
         width: auto;
         height: 40px;
     }
-    .main {
+    .content {
         margin-top: 48px; /* Add a top margin to avoid content overlay */
     }
     
@@ -154,29 +166,38 @@
         </title>
     </header>
     <body>
-        <div id="page-container">
-            <div id="content-wrap">
-                <div class="main">
-                    <div class="iframe-container">
-                        <iframe src="https://www.youtube.com/embed/-KE8v44VS_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div id="subscribe">   
-                        <form action="https://www.freecodecamp.com/email-submit" target="_blank">
-                            <fieldset>
-                                <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
-                                <input id="submit" type="submit" value="Submit">
-                            </fieldset>
-                        </form>
-                    </div>
-                    <p>
-                        
-                    </p>
-                </div>
+        <div class="content">
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/-KE8v44VS_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        <footer id="footer">
+            <div id="subscribe">   
+                <form action="https://www.freecodecamp.com/email-submit" target="_blank">
+                    <fieldset>
+                        <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
+                        <input id="submit" type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                <p>hello</p>
+                
+            </div>
+        </div>
+        <footer class="footer">
             <p>ss</p>
         </footer>
-    </div>
     </body>
 </html>
 
