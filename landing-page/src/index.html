@@ -29,6 +29,7 @@
         height: auto;
         margin: 0 -9999rem;
         padding: 0.25rem 9999rem;
+        text-align: end;
     }
 
     /*Iframe Auto Scale*/    
@@ -36,6 +37,8 @@
         overflow: hidden;
         padding-top: 56.25%;
         position: relative;
+        width: 90%;
+        margin: 10px auto;
     }
  
     #iframe-container iframe {
@@ -113,8 +116,10 @@
 
     form{
         border-radius: 5px;
-        background-color: #151518d5;
+        background-color: #1e1e1ff6;
         padding: 20px;
+        width: 90%;
+        margin: 10px auto;
     }
 
     input[type=email], select {
@@ -147,6 +152,25 @@
         text-align: center;
         padding-left: 2%;
         padding-right: 2%;
+    }
+
+    #pricing{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .price-container{
+        border-radius: 5px;
+        background-color: #1e1e1ff6;
+        padding: 20px;
+    }
+    .price-spacing {
+        display: flex;
+        flex-direction: row;
+        width: 10%;
     }
 
     /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -188,6 +212,10 @@
     .filler {
         font-size: x-small;
     }
+    #pricing{
+        display: flex;
+        flex-direction: column;
+    }
     }
     
 </style>
@@ -228,10 +256,9 @@
             </div>
             <div id="subscribe-contaner">   
                 <form action="https://www.freecodecamp.com/email-submit" target="_blank">
-  
-                        <input id="email" type="email" name="firstname" placeholder="Enter Email Here"><br>
-                        <input id="submit" type="submit" value="Submit">
-             
+                    <input id="email" type="email" name="firstname" placeholder="Enter Email Here">
+                    <br>
+                    <input id="submit" type="submit" value="Submit">
                 </form>
             </div>
             <div id="fiiler-content-2" class="filler">
@@ -239,10 +266,36 @@
                 <p>Libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus turpis in. Consectetur purus ut faucibus pulvinar elementum integer enim. Et malesuada fames ac turpis egestas sed tempus urna et. Lacus vel facilisis volutpat est velit egestas dui. Nibh tellus molestie nunc non blandit. Nibh venenatis cras sed felis eget velit. Id cursus metus aliquam eleifend mi. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Adipiscing enim eu turpis egestas pretium aenean pharetra. Nisi vitae suscipit tellus mauris a. Vitae aliquet nec ullamcorper sit. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. In eu mi bibendum neque egestas congue quisque. Maecenas accumsan lacus vel facilisis volutpat. Duis ut diam quam nulla porttitor massa. Purus in mollis nunc sed id semper risus in. Ornare massa eget egestas purus viverra accumsan in nisl. Donec enim diam vulputate ut pharetra sit. Vulputate dignissim suspendisse in est ante.</p>
                 <p>Convallis aenean et tortor at. Gravida arcu ac tortor dignissim. Duis tristique sollicitudin nibh sit amet commodo. Quis commodo odio aenean sed adipiscing diam donec adipiscing. Pharetra magna ac placerat vestibulum lectus mauris ultrices. Elementum sagittis vitae et leo duis ut diam. Amet tellus cras adipiscing enim eu turpis egestas. Senectus et netus et malesuada fames ac turpis egestas. Euismod nisi porta lorem mollis aliquam ut. Ut ornare lectus sit amet est placerat. Adipiscing commodo elit at imperdiet dui accumsan sit. A erat nam at lectus urna duis convallis convallis tellus.</p>
             </div>
-            
+            <div id="pricing">
+                <div id="first-price" class="price-container">
+                    <h1>Tier 1</h1>
+                    <h2>£10pm</h2>
+                    <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 1 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
+                    <input id="Subscribe1" type="submit" value="Subscribe">
+                </div>
+                <div class="price-spacing"></div>
+                <div id="second-price" class="price-container">
+                    <h1>Tier 2</h1>
+                    <h2>£20pm</h2>
+                    <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 2 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
+                    <input id="Subscribe2" type="submit" value="Subscribe">
+                </div>
+                <div class="price-spacing"></div>
+                <div id="third-price" class="price-container">
+                    <h1>Tier 3</h1>
+                    <h2>£30pm</h2>
+                    <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 3 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
+                    <input id="Subscribe3" type="submit" value="Subscribe">
+                </div>
+            </div>
+            <div id="fiiler-content-3" class="filler">
+                <p>Tincidunt vitae semper quis lectus nulla at. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Est sit amet facilisis magna etiam tempor orci. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Sapien pellentesque habitant morbi tristique senectus et netus. Lorem donec massa sapien faucibus et. Mauris nunc congue nisi vitae suscipit tellus. Vel turpis nunc eget lorem dolor sed viverra ipsum. Fames ac turpis egestas integer eget aliquet nibh. Quam id leo in vitae turpis massa sed elementum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Interdum velit laoreet id donec ultrices. Et malesuada fames ac turpis egestas sed tempus urna.</p>
+                <p>Viverra vitae congue eu consequat. Sit amet commodo nulla facilisi nullam vehicula ipsum. Turpis massa tincidunt dui ut ornare lectus sit amet. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Auctor urna nunc id cursus metus aliquam eleifend mi in. Adipiscing enim eu turpis egestas pretium. Quis commodo odio aenean sed. Tortor posuere ac ut consequat semper viverra nam. Velit ut tortor pretium viverra suspendisse. Bibendum arcu vitae elementum curabitur. In tellus integer feugiat scelerisque varius morbi. Egestas maecenas pharetra convallis posuere morbi. Gravida neque convallis a cras semper auctor neque vitae tempus. Amet est placerat in egestas. Lacus vel facilisis volutpat est velit egestas. Nunc lobortis mattis aliquam faucibus purus.</p>
+                <p>Etiam non quam lacus suspendisse faucibus interdum. Duis ut diam quam nulla porttitor. Sit amet massa vitae tortor condimentum lacinia quis vel. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Adipiscing elit ut aliquam purus sit. Odio ut sem nulla pharetra diam sit amet. Adipiscing bibendum est ultricies integer quis auctor elit. Tempus iaculis urna id volutpat. Nisi quis eleifend quam adipiscing vitae. Quam viverra orci sagittis eu volutpat. Cursus sit amet dictum sit amet justo donec enim diam. Elementum sagittis vitae et leo duis ut diam quam nulla. Tincidunt ornare massa eget egestas purus viverra accumsan. Massa tincidunt dui ut ornare lectus sit amet. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. Pharetra magna ac placerat vestibulum lectus mauris. Etiam erat velit scelerisque in dictum non. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Facilisis gravida neque convallis a cras semper auctor.</p>
+            </div>
         </div>
     </body>
     <footer class="footer">
-        <p>ss</p>
+        <p>Copyright 2019, Memified Inc</p>
     </footer>
 </html>
