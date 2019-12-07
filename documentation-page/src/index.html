@@ -8,7 +8,7 @@
         color: red;
     }
 
-    .sidebar {
+    #navbar {
         margin: 0;
         padding: 0;
         width: 200px;
@@ -18,19 +18,19 @@
         overflow: auto;
     }
     
-    .sidebar a {
+    #navbar a {
         display: block;
         color: black;
         padding: 16px;
         text-decoration: none;
     }
         
-    .sidebar a:focus {
+    #navbar a:focus {
         background-color: #4CAF50;
         color: white;
     }
     
-    .sidebar a:hover:not(.focus) {
+    #navbar a:hover:not(.focus) {
         background-color: #555;
         color: white;
     }
@@ -42,35 +42,30 @@
     }
     
         @media screen and (max-width: 700px) {
-        .sidebar {
+        #navbar {
             width: 100%;
             height: auto;
             position: relative;
         }
-        .sidebar a {float: left;}
+        #navbar a {float: left;}
         div.content {margin-left: 0;}
-    }
-    
-    @media screen and (max-width: 400px) {
-        .sidebar a {
-            text-align: center;
-            float: none;
+        #main-doc {
+            margin-left: 0px;
         }
+        
     }
 </style>
 
 <!DOCTYPE html>
     <html>
     <body>
-        <div class="sidebar">
-            <nav id="navbar">
-                <header id="title"></header>
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#news">News</a>
-                <a class="nav-link" href="#contact">Contact</a>
-                <a class="nav-link"href="#about">About</a>
-            </nav>
-        </div>
+        <nav id="navbar">
+            <header id="title"></header>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#news">News</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link"href="#about">About</a>
+        </nav>
         <main id="main-doc">
             <section id="home" class="main-section">
                 <header>Filler</header>
