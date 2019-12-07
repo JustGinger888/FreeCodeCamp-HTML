@@ -4,6 +4,10 @@
         font-family: "Lato", sans-serif;
     }
     
+    .main-section{
+        color: red;
+    }
+
     .sidebar {
         margin: 0;
         padding: 0;
@@ -21,17 +25,17 @@
         text-decoration: none;
     }
         
-    .sidebar a.active {
+    .sidebar a:focus {
         background-color: #4CAF50;
         color: white;
     }
     
-    .sidebar a:hover:not(.active) {
+    .sidebar a:hover:not(.focus) {
         background-color: #555;
         color: white;
     }
     
-    div.content {
+    #main-doc {
         margin-left: 200px;
         padding: 1px 16px;
         height: 1000px;
@@ -56,28 +60,45 @@
 </style>
 
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-
-<div class="sidebar">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
-<main id="main-doc">
-    <section id="" class="main-section">
-        <header>Filler</header>
-    </section>
-    
-    <div class="content">
-    <h2>Responsive Sidebar Example</h2>
-    <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
-    <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
-    <h3>Resize the browser window to see the effect.</h3>
-    </div>
-</main>
-</body>
+    <html>
+    <body>
+        <div class="sidebar">
+            <nav id="navbar">
+                <header id="title"></header>
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#news">News</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link"href="#about">About</a>
+            </nav>
+        </div>
+        <main id="main-doc">
+            <section id="home" class="main-section">
+                <header>Filler</header>
+                <article>
+                    <p>hn</p>
+                    <code></code>
+                    <p></p>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </article>
+            </section>
+            
+            <section id="news" class="main-section">
+                <header>Filler</header>
+                <article>
+                    <p>hn</p>
+                    <code></code>
+                    <p></p>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </article>
+            </section>
+        </main>
+    </body>
 </html>
