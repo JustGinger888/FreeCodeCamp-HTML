@@ -10,6 +10,14 @@
         color: red;
     }
 
+    #title{
+        color: black;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: thin;
+    }
+
     hr{
         border: 3px solid red;
     }
@@ -18,11 +26,32 @@
         margin: 0;
         padding: 0;
         left: 0;
-        width: 200px;
+        width: 210px;
         background-color: #00ffff;
-        position: fixed;
         height: 100%;
         overflow: auto;
+        position: fixed;
+        min-width: 210px;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        border-right: solid;
+        border-color: rgba(0, 22, 22, 0.4);
+    }
+
+    #navbar ul {
+        height: 88%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #navbar li {
+        color: #4d4e53;
+        border-top: 1px solid;
+        list-style: none;
+        position: relative;
+        width: 100%;
     }
     
     #navbar a {
@@ -30,6 +59,11 @@
         color: black;
         padding: 16px;
         text-decoration: none;
+        display: block;
+        padding: 10px 30px;
+        color: #4d4e53;
+        text-decoration: none;
+        cursor: pointer;
     }
         
     #navbar a:focus {
@@ -52,7 +86,7 @@
         #navbar {
             width: 100%;
             height: auto;
-            position: fixed;
+            
         }
         #navbar a {float: left;}
         #main-doc {margin-left: 0px;}
@@ -66,12 +100,30 @@
     <html>
     <body>
         <nav id="navbar">
-            <header id="title"></header>
-            <a class="nav-link" href="#home">Home</a>
-            <hr>
-            <a class="nav-link" href="#news">News</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <a class="nav-link"href="#about">About</a>
+            <header id="title">Accomodation Documentation</header>
+            <li><a class="nav-link"href="#about">Introduction</a></li>
+            <li><a class="nav-link" href="#home">Ground Floor</a></li>
+            <li></li><a class="nav-link" href="#news">First Floor</a></li>
+            <li></li><a class="nav-link" href="#contact">Second Floor</a></li>
+            <li><a class="nav-link"href="#about">Third Floor</a></li>
+            <li><a class="nav-link"href="#about">Fourth Floor</a></li>
+            <li><a class="nav-link"href="#about">Fifth Floor</a></li>
+            <li><a class="nav-link"href="#about">Sixth Floor</a></li>
+            <li><a class="nav-link"href="#about">Seventh Floor</a></li>
+            <li><a class="nav-link"href="#about">Eighth Floor</a></li>
+            <li><a class="nav-link"href="#about">Ninth Floor</a></li>
+            <li><a class="nav-link"href="#about">Tenth Floor</a></li>
+            <li><a class="nav-link"href="#about">Eleventh Floor</a></li>
+            <li><a class="nav-link"href="#about">Mornig Staff</a></li>
+            <li><a class="nav-link"href="#about">Night Staff</a></li>
+            <li><a class="nav-link"href="#about">Student Wardens</a></li>
+            <li><a class="nav-link"href="#about">Building Details</a></li>
+            <li><a class="nav-link"href="#about">Maintenance</a></li>
+            <li><a class="nav-link"href="#about">Fire Emergency</a></li>
+            <li><a class="nav-link"href="#about">Locked Out</a></li>
+            <li><a class="nav-link"href="#about">More Information</a></li>
+            <li><a class="nav-link"href="#about">Even More Information</a></li>
+            <li><a class="nav-link"href="#about">Last Bit of Information</a></li>
         </nav>
         <main id="main-doc">
             <section id="home" class="main-section">
