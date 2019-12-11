@@ -2,17 +2,24 @@
     body {
         margin: 0;
         font-family: "Lato", sans-serif;
+        background-color: #1d1d1d;
     }
     
     .main-section{
+        margin-top: 8px;
         color: red;
+    }
+
+    hr{
+        border: 3px solid red;
     }
 
     #navbar {
         margin: 0;
         padding: 0;
+        left: 0;
         width: 200px;
-        background-color: #f1f1f1;
+        background-color: #00ffff;
         position: fixed;
         height: 100%;
         overflow: auto;
@@ -45,13 +52,12 @@
         #navbar {
             width: 100%;
             height: auto;
-            position: relative;
+            position: fixed;
         }
         #navbar a {float: left;}
-        div.content {margin-left: 0;}
-        #main-doc {
-            margin-left: 0px;
-        }
+        #main-doc {margin-left: 0px;}
+        .main-section{margin-top: 68px;}
+        
         
     }
 </style>
@@ -62,6 +68,7 @@
         <nav id="navbar">
             <header id="title"></header>
             <a class="nav-link" href="#home">Home</a>
+            <hr>
             <a class="nav-link" href="#news">News</a>
             <a class="nav-link" href="#contact">Contact</a>
             <a class="nav-link"href="#about">About</a>
