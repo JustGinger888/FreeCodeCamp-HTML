@@ -9,7 +9,6 @@
   }
   /* Custom Colour Scheme  */
 
-
   /* Sizing */
   *,
   *::before,
@@ -32,11 +31,11 @@
   }
   
   body {
+    line-height: 1.4;
+    color: var(--main-white);
     font-family: sans-serif, verdana;
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.4;
-    color: var(--main-white);
   }
 
   h1, h2 {
@@ -46,7 +45,7 @@
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 
   h2 {
@@ -62,10 +61,6 @@
     color: var(--main-white);
   }
 
-  img {
-    display: block;
-    width: 100%;
-  }
   /*Basic Styling */
 
 
@@ -78,23 +73,23 @@
     left: 0;
     width: 100%;
     background: var(--main-red);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 10;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.486);
+    z-index: 2;
   }
 
-  .nav-list {
+  .nav-links {
     display: flex;
     margin-right: 2rem;
   }
 
-  .nav-list a {
+  .nav-links a {
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
     transition: background 0.4s ease-out;
   }
 
-  .nav-list a:hover {
+  .nav-links a:hover {
     background: var(--main-orange);
     color: black;
   }
@@ -105,17 +100,16 @@
   .welcome-section {
     width: 100%;
     height: 100vh;
-    background-color: #000;
     background-image: linear-gradient(18deg, #011627 0%, #0c0b0c 100%);
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .welcome-section > p {
     color: var(--main-red);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 100;
     font-style: italic;
   }
@@ -125,14 +119,15 @@
   /* Projects Section */
   .projects-section {
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 12rem 1rem;
     background: var(--main-blue);
   }
 
-  .projects-section-header {
+  .projects-section-title {
     max-width: fit-content;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-white);
+    text-decoration-color: var(--main-white);
   }
   /* Projects Section */
 
@@ -142,21 +137,21 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    width: 100%;
+    max-width: 1280px;
   }
 
   .project {
     background: var(--main-gray);
-    box-shadow: 1px 1px 2px rgba(155, 110, 110, 0.5);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
   }
 
   .code {
     color: var(--main-gray);
-    transition: color 0.5s ease-out;
+    transition: color 0.8s ease-out;
   }
 
   .project:hover .code {
@@ -164,14 +159,14 @@
   }
 
   .project-image {
-    height: calc(100% - 6.8rem);
+    height: auto;
     width: 100%;
     object-fit: cover;
   }
 
   .project-title {
     font-size: 2rem;
-    padding: 2rem 0.5rem;
+    padding: 2rem 1rem;
   }
 
   .btn {
@@ -185,6 +180,7 @@
     background: var(--main-gray);
     transition: color 0.4s ease-out;
     transition: background 0.6s ease-out;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
 
   .btn-show-all:hover {
@@ -218,11 +214,11 @@
     background: var(--main-gray);
   }
 
-  .contact-section-header > h2 {
+  .contact-section-header > h3 {
     font-size: 6rem;
   }
 
-  .contact-section-header > p {
+  .contact-section-header > h4 {
     font-style: italic;
   }
 
@@ -235,13 +231,13 @@
     flex-wrap: wrap;
   }
 
-  .contact-details {
+  .contact-types {
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
   }
 
-  .contact-details:hover {
+  .contact-types:hover {
     transform: scale(1.2,1.2);
     color: var(--main-blue);
   }
@@ -261,9 +257,19 @@
 
 
   /* Media Queries */
-  @media (max-width: 70em) {
+  @media (max-width: 80em) {
     html {
       font-size: 58%;
+    }
+    h1 {
+      font-size: 7rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+    .welcome-section > p{
+      font-size: 3.6rem;
     }
   }
 
@@ -271,20 +277,30 @@
     html {
       font-size: 54%;
     }
+    h1 {
+      font-size: 6rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+    .welcome-section > p{
+      font-size: 3.3rem;
+    }
   }
 
-  @media (max-width: 28em) {
+  @media (max-width: 40em) {
     html {
       font-size: 50%;
     }
-    .projects-section-header {
+    .projects-section-title {
       font-size: 4rem;
     }
     .nav {
       justify-content: center;
     }
 
-    .nav-list {
+    .nav-links {
       margin: 0 1rem;
     }
 
@@ -298,47 +314,57 @@
 
     footer {
       flex-direction: column;
-      text-align: center;
+      text-align: right;
     }
 
     .contact-section-header > h2 {
       font-size: 4rem;
+    }
+    h1 {
+      font-size: 6rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+    .welcome-section > p{
+      font-size: 3rem;
     }
   }
   /* Media Queries */
 </style>
 
 
-<!-- START ICON LINK -->
+<!-- ICON LINK -->
 <link
   rel="stylesheet"
   href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 />
-<!-- END ICON LINK -->
+<!-- ICON LINK -->
 
 
-<!-- START TOP NAV -->
+<!-- TOP NAV -->
 <nav id="navbar" class="nav">
-  <ul class="nav-list">
+  <ul class="nav-links">
     <li><a href="#welcome-section">Introduction</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-<!-- END TOP NAV -->
+<!-- TOP NAV -->
 
 
-<!-- START WELCOME SECTION -->
+<!-- WELCOME SECTION -->
 <section id="welcome-section" class="welcome-section">
   <h1>&lt;Ethan Moffatt/&gt;</h1>
   <p>aspiring developer</p>
 </section>
-<!-- END WELCOME SECTION -->
+<!-- WELCOME SECTION -->
 
 
-<!-- START PROJECTS SECTION -->
+<!-- PROJECTS SECTION -->
 <section id="projects" class="projects-section">
-  <h2 class="projects-section-header">Previous Projects Include:</h2>
+  <h2 class="projects-section-title">Previous Projects Include:</h2>
 
   <div class="projects-grid">
     <a id="documentationPage" 
@@ -346,9 +372,11 @@
       target="_blank"
       class="project project-tile">
 
+      <figure>
       <img class="project-image"
         src="https://i.imgur.com/kT0uWya.png"
         alt="project"/>
+      </figure>
 
       <p class="project-title">
         <span class="code">&lt;</span>
@@ -363,9 +391,11 @@
       target="_blank"
       class="project project-tile">
 
+    <figure>
       <img class="project-image"
         src="https://i.imgur.com/KLYCnhP.png"
         alt="project"/>
+      </figure>
 
       <p class="project-title">
         <span class="code">&lt;</span>
@@ -380,9 +410,11 @@
       target="_blank"
       class="project project-tile">
 
+    <figure>
       <img class="project-image"
         src="https://i.imgur.com/WMunD3G.png"
         alt="project"/>
+      </figure>
 
       <p class="project-title">
         <span class="code">&lt;</span>
@@ -397,9 +429,11 @@
       target="_blank"
       class="project project-tile">
 
+    <figure>
       <img class="project-image"
         src="https://i.imgur.com/1bPqRRL.png"
         alt="project"/>
+      </figure>
 
       <p class="project-title">
         <span class="code">&lt;</span>
@@ -414,9 +448,11 @@
       target="_blank"
       class="project project-tile">
 
+    <figure>
       <img class="project-image"
         src="https://i.imgur.com/wh2QklH.png"
         alt="project"/>
+      </figure>
 
       <p class="project-title">
         <span class="code">&lt;</span>
@@ -431,9 +467,11 @@
       target="_blank"
       class="project project-tile">
 
+    <figure>
       <img class="project-image"
         src="https://i.imgur.com/vUEpI9x.png"
         alt="project"/>
+      </figure>
 
       <p class="project-title">
         <span class="code">&lt;</span>
@@ -444,27 +482,28 @@
   </div>
 
 
-  <a href="https://github.com/JustGinger888"
+  <a id="ShowAll" 
+    href="https://github.com/JustGinger888"
     class="btn btn-show-all"
     target="_blank"
     >Show all<i class="fas fa-chevron-right"></i>
   </a>
 </section>
-<!-- END PROJECTS SECTION -->
+<!-- PROJECTS SECTION -->
 
 
-<!-- START CONTACT SECTION -->
+<!-- CONTACT SECTION -->
 <section id="contact" class="contact-section">
   <div class="contact-section-header">
-    <h2>Get in Touch...</h2>
-    <p>Just slide into my DM's!</p>
+    <h3>Get in Touch...</h3>
+    <h4>Just slide into my DM's!</h4>
   </div>
 
   <div class="contact-links">
     <a id="Instagram" 
       href="https://www.instagram.com/justginger888/"
       target="_blank"
-      class="btn contact-details">
+      class="btn contact-types">
       <i class="fab fa-instagram"></i> 
       Instagram
     </a>
@@ -472,7 +511,7 @@
     <a id="profile-link"
       href="https://github.com/JustGinger888"
       target="_blank"
-      class="btn contact-details">
+      class="btn contact-types">
       <i class="fab fa-github"></i> 
       GitHub
     </a>
@@ -480,7 +519,7 @@
     <a id="codepen" 
       href="https://codepen.io/justginger888"
       target="_blank"
-      class="btn contact-details">
+      class="btn contact-types">
       <i class="fab fa-codepen"></i> 
       CodePen
     </a>
@@ -488,23 +527,23 @@
     <a id="linkedin" 
       href="https://www.linkedin.com/in/ethan-moffatt-605656182/"
       target="_blank"
-      class="btn contact-details">
+      class="btn contact-types">
       <i class="fab fa-linkedin"></i> 
       linkedin
     </a>
 
     <a href="mailto:ethanmoffatt888@icloud.com" 
-      class="btn contact-details">
+      class="btn contact-types">
       <i class="fas fa-at"></i>
       E-Mail
     </a>
   </div>
 </section>
-<!-- END CONTACT SECTION -->
+<!-- CONTACT SECTION -->
 
 
-<!-- START FOOTER SECTION -->
+<!-- FOOTER SECTION -->
 <footer>
   <p class="footerMessage"> &copy; Created by Ethan Moffatt </p>
 </footer>
-<!-- END FOOTER SECTION -->
+<!-- FOOTER SECTION -->
