@@ -5,8 +5,8 @@ These project outlines can be found on https://www.freecodecamp.org/learn, under
 My functioning implimentations can all be viewed on codepen:
 
 Links to my projects are:
-https://codepen.io/justginger888/pen/VwYKyoz
-https://codepen.io/justginger888/pen/gObbbqw
-https://codepen.io/justginger888/pen/PooVmpW
-https://codepen.io/justginger888/pen/vYYzmob
-https://codepen.io/justginger888/pen/eYYjppM
+https://codepen.io/justginger888/pen/VwYKyoz,
+https://codepen.io/justginger888/pen/gObbbqw,
+https://codepen.io/justginger888/pen/PooVmpW,
+https://codepen.io/justginger888/pen/vYYzmob,
+https://codepen.io/justginger888/pen/eYYjppM,
