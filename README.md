@@ -17,12 +17,12 @@ My functioning implimentations can all be viewed on codepen:
 
 ## Websites
 ### Documentation Page
-A basic docuentation page with multiple sections of various styles
+* A basic docuentation page with multiple sections of various styles
 ### Landing Page
-A landng page template used to diplay an embeded video and multiple plan subscriptions
+* A landng page template used to diplay an embeded video and multiple plan subscriptions
 ### Personal Portifolio
-My own personal portfoolio pafe that i developed 
+* My own personal portfoolio pafe that i developed 
 ### Survey Form
-A standard survey form that emails results to me when filled in
+* A standard survey form that emails results to me when filled in
 ### Tribute Page
-A tribute page that is dedicated to the game adventure
+* A tribute page that is dedicated to the game adventure
