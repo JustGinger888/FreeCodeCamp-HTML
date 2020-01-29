@@ -1,250 +1,251 @@
-<style>
-
-    html{
-        font-family: "Helvetica Neue", Arial, sans-serif;
-    }
-    html, body {
-        font-family: "Arial", sans-serif;
-        height: 100%;
-      color: white;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        background: #0e0e10;
-    }
-
-    .content {
-        flex: 1 0 auto;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        background: #6441a5;
-        width:100%;
-        bottom:0;
-        left:0;
-        height: auto;
-        margin: 0 -9999rem;
-        padding: 0.25rem 9999rem;
-        text-align: end;
-    }
-
-    /*Iframe Auto Scale*/    
-    #iframe-container {
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        width: 90%;
-        margin: 10px auto;
-    }
- 
-    #iframe-container iframe {
-        border: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-
-    header {
-        background-color:#6441a5;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        color: white;
-        text-align: center;
-        z-index: 2
-    }
-
-
-    /* The navigation bar */
-    .navbar {
-        
-        display: flex;
-        margin: 0 0 0 auto;
-
-    }
-    
-    /* Links inside the navbar */
-    .navbar a {
-        float: right;
-        display: block;
-        color: #f2f2f2;
-        text-align: right;
-        font-size: large;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-    /* Change background on mouse-over */
-    .navbar a:hover {
-        background: #ddd;
-        color: black;
-    }
-
-    .navbar img{
-        align-items: flex-start
-    }
-
-    /* Main content */
-    .content {
-        margin-top: 68px; /* Add a top margin to avoid content overlay */
-    }
-
-    .top-nav{
-        display: flex;
-    }
-
-    .site-title{
-        display: flex;
-        margin: auto 0 0 0;
-        width: auto;
-        height: 60px;
-    }
-
-    #intro-container{
-        font-size: medium;
-        text-align: center;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    form{
-        border-radius: 5px;
-        background-color: #1e1e1ff6;
-        padding: 20px;
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    input[type=email], select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    input[type=submit] {
-        width: 100%;
-        background-color: #6441a5;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    input[type=submit]:hover {
-        background-color: #55378f;
-    }
-
-    .filler {
-        font-size: small;
-        text-align: center;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    #pricing{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .price-container{
-        border-radius: 5px;
-        background-color: #1e1e1ff6;
-        padding: 20px;
-    }
-    .price-spacing {
-        display: flex;
-        flex-direction: row;
-        width: 10%;
-    }
-
-    h1 {
-        text-align: center;
-    }
-    h2 {
-        text-align: center;
-    }
-
-    hr {
-        border: 2px solid #6441a5;
-    }
-
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (max-width: 600px) {
-    .top-nav {
-        display: flex;
-        background: #6441a5;
-        }
-    /* The navigation bar */
-    .navbar {
-        
-        display: flex;
-        margin: 0 0 0 auto;
-
-    }
-    
-    /* Links inside the navbar */
-    .navbar a {
-        float: right;
-        display: block;
-        color: #f2f2f2;
-        text-align: right;
-        font-size: medium;
-        padding: 8px 8px;
-        text-decoration: none;
-    }
-
-    #header-img{
-        display: flex;
-        width: auto;
-        height: 40px;
-    }
-    .content {
-        margin-top: 48px; /* Add a top margin to avoid content overlay */
-    }
-    #intro-container{
-        font-size: small;
-    }
-    .filler {
-        font-size: x-small;
-    }
-    #pricing{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 90%;
-    }
-    .price-spacing {
-        height: 14px;
-    }
-    }
-    
-</style>
-
-<script>
-    function resizeIframe(obj) {
-        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-    }
-</script>
-
 <!DOCTYPE html>
 <html>
+<style>
+    
+        html{
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+        html, body {
+            font-family: "Arial", sans-serif;
+            height: 100%;
+          color: white;
+        }
+    
+        body {
+            display: flex;
+            flex-direction: column;
+            background: #0e0e10;
+        }
+    
+        .content {
+            flex: 1 0 auto;
+        }
+    
+        footer {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            background: #6441a5;
+            width:100%;
+            bottom:0;
+            left:0;
+            height: auto;
+            margin: 0 -9999rem;
+            padding: 0.25rem 9999rem;
+            text-align: end;
+        }
+    
+        /*Iframe Auto Scale*/    
+        #iframe-container {
+            overflow: hidden;
+            padding-top: 56.25%;
+            position: relative;
+            width: 90%;
+            margin: 10px auto;
+        }
+     
+        #iframe-container iframe {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    
+        header {
+            background-color:#6441a5;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            z-index: 2
+        }
+    
+    
+        /* The navigation bar */
+        .navbar {
+            
+            display: flex;
+            margin: 0 0 0 auto;
+    
+        }
+        
+        /* Links inside the navbar */
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: right;
+            font-size: large;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    
+        /* Change background on mouse-over */
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+    
+        .navbar img{
+            align-items: flex-start
+        }
+    
+        /* Main content */
+        .content {
+            margin-top: 68px; /* Add a top margin to avoid content overlay */
+        }
+    
+        .top-nav{
+            display: flex;
+        }
+    
+        .site-title{
+            display: flex;
+            margin: auto 0 0 0;
+            width: auto;
+            height: 60px;
+        }
+    
+        #intro-container{
+            font-size: medium;
+            text-align: center;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    
+        form{
+            border-radius: 5px;
+            background-color: #1e1e1ff6;
+            padding: 20px;
+            width: 90%;
+            margin: 10px auto;
+        }
+    
+        input[type=email], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    
+        input[type=submit] {
+            width: 100%;
+            background-color: #6441a5;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        input[type=submit]:hover {
+            background-color: #55378f;
+        }
+    
+        .filler {
+            font-size: small;
+            text-align: center;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+    
+        #pricing{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 90%;
+            margin: 10px auto;
+        }
+    
+        .price-container{
+            border-radius: 5px;
+            background-color: #1e1e1ff6;
+            padding: 20px;
+        }
+        .price-spacing {
+            display: flex;
+            flex-direction: row;
+            width: 10%;
+        }
+    
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    
+        hr {
+            border: 2px solid #6441a5;
+        }
+    
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 600px) {
+        .top-nav {
+            display: flex;
+            background: #6441a5;
+            }
+        /* The navigation bar */
+        .navbar {
+            
+            display: flex;
+            margin: 0 0 0 auto;
+    
+        }
+        
+        /* Links inside the navbar */
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: right;
+            font-size: medium;
+            padding: 8px 8px;
+            text-decoration: none;
+        }
+    
+        #header-img{
+            display: flex;
+            width: auto;
+            height: 40px;
+        }
+        .content {
+            margin-top: 48px; /* Add a top margin to avoid content overlay */
+        }
+        #intro-container{
+            font-size: small;
+        }
+        .filler {
+            font-size: x-small;
+        }
+        #pricing{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+        }
+        .price-spacing {
+            height: 14px;
+        }
+        }
+        
+    </style>
+    
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+
+ <body>
     <header id="header">
         <div class="top-nav">
             <img id="header-img" class="site-title" src="https://i.imgur.com/LHtYi96.png" alt="Memified Logo">
@@ -259,63 +260,63 @@
             <h1>header</h1>
         </title>
     </header>
-    <body>
-        <div class="content">
-            <div id="intro-container">
-                <p>This is a page I created as part of my FreeCodeCamp Responsive Web Design certification, using the Memified logo I created as a center point for the landing points desig. This introduction itself is also just filler content which allow me to give brief explanation on what I was busy creating.</p>
+
+    <div class="content">
+        <div id="intro-container">
+            <p>This is a page I created as part of my FreeCodeCamp Responsive Web Design certification, using the Memified logo I created as a center point for the landing points desig. This introduction itself is also just filler content which allow me to give brief explanation on what I was busy creating.</p>
+        </div>
+        <div id="iframe-container">
+            <iframe src="https://www.youtube.com/embed/-KE8v44VS_k" alt="Meme Review" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="fiiler-content-1" class="filler">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra vel turpis. Consectetur adipiscing elit pellentesque habitant. Ultricies tristique nulla aliquet enim tortor at auctor urna. Auctor neque vitae tempus quam pellentesque nec. In cursus turpis massa tincidunt dui ut. Vel pretium lectus quam id. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Egestas integer eget aliquet nibh praesent. Sapien eget mi proin sed libero enim. Nulla facilisi nullam vehicula ipsum. Dictumst quisque sagittis purus sit amet volutpat consequat. Sit amet consectetur adipiscing elit. Velit egestas dui id ornare arcu odio ut sem.</p>
+            <p>Tristique risus nec feugiat in. Vitae tortor condimentum lacinia quis vel eros donec ac. Aliquam ut porttitor leo a diam sollicitudin tempor id. Velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Consequat ac felis donec et odio pellentesque. Enim diam vulputate ut pharetra sit amet. Pellentesque elit eget gravida cum sociis natoque penatibus et. Ultricies tristique nulla aliquet enim tortor at auctor. Faucibus ornare suspendisse sed nisi lacus sed. Non enim praesent elementum facilisis leo vel fringilla est. Magna etiam tempor orci eu lobortis elementum. Et leo duis ut diam quam nulla porttitor. Quis vel eros donec ac. Vulputate enim nulla aliquet porttitor lacus luctus. Amet dictum sit amet justo donec enim. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Magna eget est lorem ipsum. Integer quis auctor elit sed vulputate mi sit amet mauris.</p>
+        </div>
+        <div id="subscribe-contaner">   
+            <form action="https://www.freecodecamp.com/email-submit" target="_blank">
+                <input id="email" type="email" name="firstname" placeholder="Enter Email Here">
+                <br>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="fiiler-content-2" class="filler">
+            <p>Odio eu feugiat pretium nibh ipsum. Pretium nibh ipsum consequat nisl vel pretium. Neque volutpat ac tincidunt vitae semper. Auctor eu augue ut lectus. Nam libero justo laoreet sit amet cursus. Id diam vel quam elementum pulvinar. Velit dignissim sodales ut eu sem. Aliquam ultrices sagittis orci a scelerisque purus. Eget felis eget nunc lobortis. Ultrices tincidunt arcu non sodales neque sodales ut. Auctor elit sed vulputate mi. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Malesuada fames ac turpis egestas.</p>
+            <p>Libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus turpis in. Consectetur purus ut faucibus pulvinar elementum integer enim. Et malesuada fames ac turpis egestas sed tempus urna et. Lacus vel facilisis volutpat est velit egestas dui. Nibh tellus molestie nunc non blandit. Nibh venenatis cras sed felis eget velit. Id cursus metus aliquam eleifend mi. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Adipiscing enim eu turpis egestas pretium aenean pharetra. Nisi vitae suscipit tellus mauris a. Vitae aliquet nec ullamcorper sit. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. In eu mi bibendum neque egestas congue quisque. Maecenas accumsan lacus vel facilisis volutpat. Duis ut diam quam nulla porttitor massa. Purus in mollis nunc sed id semper risus in. Ornare massa eget egestas purus viverra accumsan in nisl. Donec enim diam vulputate ut pharetra sit. Vulputate dignissim suspendisse in est ante.</p>
+            <p>Convallis aenean et tortor at. Gravida arcu ac tortor dignissim. Duis tristique sollicitudin nibh sit amet commodo. Quis commodo odio aenean sed adipiscing diam donec adipiscing. Pharetra magna ac placerat vestibulum lectus mauris ultrices. Elementum sagittis vitae et leo duis ut diam. Amet tellus cras adipiscing enim eu turpis egestas. Senectus et netus et malesuada fames ac turpis egestas. Euismod nisi porta lorem mollis aliquam ut. Ut ornare lectus sit amet est placerat. Adipiscing commodo elit at imperdiet dui accumsan sit. A erat nam at lectus urna duis convallis convallis tellus.</p>
+        </div>
+        <div id="pricing">
+            <div id="first-price" class="price-container">
+                <h1>Tier 1</h1>
+                <hr>
+                <h2>£10pm</h2>
+                <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 1 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
+                <input id="Subscribe1" type="submit" value="Subscribe">
             </div>
-            <div id="iframe-container">
-                <iframe src="https://www.youtube.com/embed/-KE8v44VS_k" alt="Meme Review" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="price-spacing"></div>
+            <div id="second-price" class="price-container">
+                <h1>Tier 2</h1>
+                <hr>
+                <h2>£20pm</h2>
+                <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 2 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
+                <input id="Subscribe2" type="submit" value="Subscribe">
             </div>
-            <div id="fiiler-content-1" class="filler">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra vel turpis. Consectetur adipiscing elit pellentesque habitant. Ultricies tristique nulla aliquet enim tortor at auctor urna. Auctor neque vitae tempus quam pellentesque nec. In cursus turpis massa tincidunt dui ut. Vel pretium lectus quam id. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Egestas integer eget aliquet nibh praesent. Sapien eget mi proin sed libero enim. Nulla facilisi nullam vehicula ipsum. Dictumst quisque sagittis purus sit amet volutpat consequat. Sit amet consectetur adipiscing elit. Velit egestas dui id ornare arcu odio ut sem.</p>
-                <p>Tristique risus nec feugiat in. Vitae tortor condimentum lacinia quis vel eros donec ac. Aliquam ut porttitor leo a diam sollicitudin tempor id. Velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Consequat ac felis donec et odio pellentesque. Enim diam vulputate ut pharetra sit amet. Pellentesque elit eget gravida cum sociis natoque penatibus et. Ultricies tristique nulla aliquet enim tortor at auctor. Faucibus ornare suspendisse sed nisi lacus sed. Non enim praesent elementum facilisis leo vel fringilla est. Magna etiam tempor orci eu lobortis elementum. Et leo duis ut diam quam nulla porttitor. Quis vel eros donec ac. Vulputate enim nulla aliquet porttitor lacus luctus. Amet dictum sit amet justo donec enim. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Magna eget est lorem ipsum. Integer quis auctor elit sed vulputate mi sit amet mauris.</p>
-            </div>
-            <div id="subscribe-contaner">   
-                <form action="https://www.freecodecamp.com/email-submit" target="_blank">
-                    <input id="email" type="email" name="firstname" placeholder="Enter Email Here">
-                    <br>
-                    <input id="submit" type="submit" value="Submit">
-                </form>
-            </div>
-            <div id="fiiler-content-2" class="filler">
-                <p>Odio eu feugiat pretium nibh ipsum. Pretium nibh ipsum consequat nisl vel pretium. Neque volutpat ac tincidunt vitae semper. Auctor eu augue ut lectus. Nam libero justo laoreet sit amet cursus. Id diam vel quam elementum pulvinar. Velit dignissim sodales ut eu sem. Aliquam ultrices sagittis orci a scelerisque purus. Eget felis eget nunc lobortis. Ultrices tincidunt arcu non sodales neque sodales ut. Auctor elit sed vulputate mi. Penatibus et magnis dis parturient montes nascetur ridiculus mus. Malesuada fames ac turpis egestas.</p>
-                <p>Libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus turpis in. Consectetur purus ut faucibus pulvinar elementum integer enim. Et malesuada fames ac turpis egestas sed tempus urna et. Lacus vel facilisis volutpat est velit egestas dui. Nibh tellus molestie nunc non blandit. Nibh venenatis cras sed felis eget velit. Id cursus metus aliquam eleifend mi. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Adipiscing enim eu turpis egestas pretium aenean pharetra. Nisi vitae suscipit tellus mauris a. Vitae aliquet nec ullamcorper sit. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor. In eu mi bibendum neque egestas congue quisque. Maecenas accumsan lacus vel facilisis volutpat. Duis ut diam quam nulla porttitor massa. Purus in mollis nunc sed id semper risus in. Ornare massa eget egestas purus viverra accumsan in nisl. Donec enim diam vulputate ut pharetra sit. Vulputate dignissim suspendisse in est ante.</p>
-                <p>Convallis aenean et tortor at. Gravida arcu ac tortor dignissim. Duis tristique sollicitudin nibh sit amet commodo. Quis commodo odio aenean sed adipiscing diam donec adipiscing. Pharetra magna ac placerat vestibulum lectus mauris ultrices. Elementum sagittis vitae et leo duis ut diam. Amet tellus cras adipiscing enim eu turpis egestas. Senectus et netus et malesuada fames ac turpis egestas. Euismod nisi porta lorem mollis aliquam ut. Ut ornare lectus sit amet est placerat. Adipiscing commodo elit at imperdiet dui accumsan sit. A erat nam at lectus urna duis convallis convallis tellus.</p>
-            </div>
-            <div id="pricing">
-                <div id="first-price" class="price-container">
-                    <h1>Tier 1</h1>
-                    <hr>
-                    <h2>£10pm</h2>
-                    <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 1 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
-                    <input id="Subscribe1" type="submit" value="Subscribe">
-                </div>
-                <div class="price-spacing"></div>
-                <div id="second-price" class="price-container">
-                    <h1>Tier 2</h1>
-                    <hr>
-                    <h2>£20pm</h2>
-                    <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 2 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
-                    <input id="Subscribe2" type="submit" value="Subscribe">
-                </div>
-                <div class="price-spacing"></div>
-                <div id="third-price" class="price-container">
-                    <h1>Tier 3</h1>
-                    <hr>
-                    <h2>£30pm</h2>
-                    <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 3 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
-                    <input id="Subscribe3" type="submit" value="Subscribe">
-                </div>
-            </div>
-            <div id="fiiler-content-3" class="filler">
-                <p>Tincidunt vitae semper quis lectus nulla at. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Est sit amet facilisis magna etiam tempor orci. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Sapien pellentesque habitant morbi tristique senectus et netus. Lorem donec massa sapien faucibus et. Mauris nunc congue nisi vitae suscipit tellus. Vel turpis nunc eget lorem dolor sed viverra ipsum. Fames ac turpis egestas integer eget aliquet nibh. Quam id leo in vitae turpis massa sed elementum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Interdum velit laoreet id donec ultrices. Et malesuada fames ac turpis egestas sed tempus urna.</p>
-                <p>Viverra vitae congue eu consequat. Sit amet commodo nulla facilisi nullam vehicula ipsum. Turpis massa tincidunt dui ut ornare lectus sit amet. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Auctor urna nunc id cursus metus aliquam eleifend mi in. Adipiscing enim eu turpis egestas pretium. Quis commodo odio aenean sed. Tortor posuere ac ut consequat semper viverra nam. Velit ut tortor pretium viverra suspendisse. Bibendum arcu vitae elementum curabitur. In tellus integer feugiat scelerisque varius morbi. Egestas maecenas pharetra convallis posuere morbi. Gravida neque convallis a cras semper auctor neque vitae tempus. Amet est placerat in egestas. Lacus vel facilisis volutpat est velit egestas. Nunc lobortis mattis aliquam faucibus purus.</p>
-                <p>Etiam non quam lacus suspendisse faucibus interdum. Duis ut diam quam nulla porttitor. Sit amet massa vitae tortor condimentum lacinia quis vel. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Adipiscing elit ut aliquam purus sit. Odio ut sem nulla pharetra diam sit amet. Adipiscing bibendum est ultricies integer quis auctor elit. Tempus iaculis urna id volutpat. Nisi quis eleifend quam adipiscing vitae. Quam viverra orci sagittis eu volutpat. Cursus sit amet dictum sit amet justo donec enim diam. Elementum sagittis vitae et leo duis ut diam quam nulla. Tincidunt ornare massa eget egestas purus viverra accumsan. Massa tincidunt dui ut ornare lectus sit amet. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. Pharetra magna ac placerat vestibulum lectus mauris. Etiam erat velit scelerisque in dictum non. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Facilisis gravida neque convallis a cras semper auctor.</p>
+            <div class="price-spacing"></div>
+            <div id="third-price" class="price-container">
+                <h1>Tier 3</h1>
+                <hr>
+                <h2>£30pm</h2>
+                <p class="filler">Just some pointless filler that describes what youll get once you subscribe to my tier 3 content subscription, though I must warn you that any subscription might not be worth the money at this point in time.</p>
+                <input id="Subscribe3" type="submit" value="Subscribe">
             </div>
         </div>
-    </body>
+        <div id="fiiler-content-3" class="filler">
+            <p>Tincidunt vitae semper quis lectus nulla at. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Est sit amet facilisis magna etiam tempor orci. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Sapien pellentesque habitant morbi tristique senectus et netus. Lorem donec massa sapien faucibus et. Mauris nunc congue nisi vitae suscipit tellus. Vel turpis nunc eget lorem dolor sed viverra ipsum. Fames ac turpis egestas integer eget aliquet nibh. Quam id leo in vitae turpis massa sed elementum. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Interdum velit laoreet id donec ultrices. Et malesuada fames ac turpis egestas sed tempus urna.</p>
+            <p>Viverra vitae congue eu consequat. Sit amet commodo nulla facilisi nullam vehicula ipsum. Turpis massa tincidunt dui ut ornare lectus sit amet. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis. Auctor urna nunc id cursus metus aliquam eleifend mi in. Adipiscing enim eu turpis egestas pretium. Quis commodo odio aenean sed. Tortor posuere ac ut consequat semper viverra nam. Velit ut tortor pretium viverra suspendisse. Bibendum arcu vitae elementum curabitur. In tellus integer feugiat scelerisque varius morbi. Egestas maecenas pharetra convallis posuere morbi. Gravida neque convallis a cras semper auctor neque vitae tempus. Amet est placerat in egestas. Lacus vel facilisis volutpat est velit egestas. Nunc lobortis mattis aliquam faucibus purus.</p>
+            <p>Etiam non quam lacus suspendisse faucibus interdum. Duis ut diam quam nulla porttitor. Sit amet massa vitae tortor condimentum lacinia quis vel. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Adipiscing elit ut aliquam purus sit. Odio ut sem nulla pharetra diam sit amet. Adipiscing bibendum est ultricies integer quis auctor elit. Tempus iaculis urna id volutpat. Nisi quis eleifend quam adipiscing vitae. Quam viverra orci sagittis eu volutpat. Cursus sit amet dictum sit amet justo donec enim diam. Elementum sagittis vitae et leo duis ut diam quam nulla. Tincidunt ornare massa eget egestas purus viverra accumsan. Massa tincidunt dui ut ornare lectus sit amet. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. Pharetra magna ac placerat vestibulum lectus mauris. Etiam erat velit scelerisque in dictum non. Id diam maecenas ultricies mi eget mauris pharetra et ultrices. Facilisis gravida neque convallis a cras semper auctor.</p>
+        </div>
+    </div>
     <footer class="footer">
         <p>Copyright 2019, Memified Inc</p>
     </footer>
+    </body>
 </html>
